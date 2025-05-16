@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav id="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="survey.html">Survey</a></li>
+            </ul>
+        </nav>
+        <button id="theme-toggle">Dark Mode</button>
+    </header>
+
+    <main>
+        <section class="portfolio">
+            <h1>My Projects</h1>
+            
+            <div class="three-column">
+                <article class="project-card" id="project1">
+                    <img src="images/profile1.jpg" alt="E-commerce Website">
+                    <h3>E-commerce Platform</h3>
+                    <p class="project-desc">A full-featured online store with product listings and cart functionality.</p>
+                    <button class="details-btn" onclick="toggleDetails('details1')">View Details</button>
+                    <div class="project-details" id="details1">
+                        <p>Built with React, Node.js, and MongoDB. Features include user authentication, product search, and payment integration.</p>
+                        <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Project demo" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </article>
+
+                <article class="project-card" id="project2">
+                    <img src="images/profile2.jpeg" alt="E- Diary website">
+                    <h3>E-Diary Management System</h3>
+                    <p class="project-desc">E-Diary Managemt System is a digital platform that allows users to create, manage, and organize personal diaries or notes electronically.</p>
+                    <button class="details-btn" onclick="toggleDetails('details2')">View Details</button>
+                    <div class="project-details" id="details2">
+                        <p>Built with HTML, CSS and Javascript. Features include user authentication, searchability,and ease accessability digital solution.</p>
+                  
+                    </div>
+                </article>
+
+                <article class="project-card" id="project3">
+                    <img src="images/profile3.jpg" alt="Task Management App">
+                    <h3>Task Manager</h3>
+                    <p class="project-desc">A productivity app for organizing daily tasks and projects.</p>
+                    <button class="details-btn" onclick="toggleDetails('details3')">View Details</button>
+                    <div class="project-details" id="details3">
+                        <p>Developed with Vue.js and Firebase. Includes drag-and-drop functionality and team collaboration features.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Lusajo Mwampeta &copy; 2023. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
